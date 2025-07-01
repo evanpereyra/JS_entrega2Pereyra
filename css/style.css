@@ -159,57 +159,6 @@ footer p {
   list-style-type: "✅";
 }
 
-/* galeria */
-
-/*
-.galeria {
-  grid-area: cont;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-.galeria__producto {
-  display: flex;
-  flex-direction: column;
-  margin: 2em;
-  width: 400px;
-  justify-content: space-evenly;
-}
-
-.row.g-5 {
-  justify-content: center;
-}
-
-.row.g-5 .col-md-12 {
-  justify-content: center;
-  height: 100%;
-  padding-inline: 100px;
-}
-
-.form-check,
-button {
-  justify-content: end;
-}
-
-.album .card {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: auto;
-}
-
-.text-body-secondary {
-  --bs-secondary-color: whitesmoke;
-}
-
-h1 {
-  transition: transform 0.3s ease, text-shadow 0.3s ease, font-size 0.3s ease;
-}
-h1:hover {
-  transform: translateY(-30px);
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-  font-size: 100px;
-}
 
 p {
   transition: font-size 0.3s ease;
