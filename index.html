@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <title>Veterinaria - Cliente</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="grid-container">
+      <h1>Veterinaria</h1>
+
+      <div id="login">
+        <h2>Login Cliente</h2>
+        <form id="loginForm">
+          <label for="username">Usuario:</label><br>
+          <input type="text" id="username" name="username"><br><br>
+          <label for="password">Contraseña:</label><br>
+          <input type="password" id="password" name="password"><br><br>
+          <button id="btnLogin" type="button">Iniciar Sesión</button>
+         <!--onclick="login()"-->
+        </form>
+        <div id="message"></div>
+
+      </div>
+
+  <div id="panel" class="seccion">
+    <h2>Bienvenido, <span id="clienteNombre"></span></h2>
+    <button id="btnLogout" type="button">Cerrar sesión</button>
+
+    <h3>Mascotas</h3>
+    <div>
+      <input type="text" id="nombreMascota" placeholder="Nombre mascota" />
+      <select id="tipoMascota">
+        <option value="Perro">Perro</option>
+        <option value="Gato">Gato</option>
+        <option value="Otro">Otro</option>
+      </select>
+      <button id="btnAltaMascota" type="button">Agregar</button>
+    </div>
+    <div id="listaMascotas"></div>
+
+    <h3>Turnos</h3>
+    <div>
+      <input type="date" id="fechaTurno" />
+      <select id="mascotaTurno"></select>
+      <button id="btnReserva" type="button">Reservar turno</button>
+    </div>
+    <div id="listaTurnos"></div>
+  </div>
+
+  </div>  
+  <script type="module" src="script/script.js"></script>
+  
+</body>
+</html>
